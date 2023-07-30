@@ -20,7 +20,6 @@ async function main(channel_id) {
     let author_v = await getAuthorID(channel_id)
     let page_num = await getChannelPageNum(channel_url)
     let all_programs = await getAllPrograms(author_v, channel_id, page_num)
-    let all_audio_info=[]
     console.log('下载前请创建下载目录，如果没有目录会报错哦！')
     for(let i=0;i<all_programs.length;i++){
         console.log(`正在处理第${i+1}个下载，请耐心等候……`)
@@ -37,5 +36,5 @@ async function main(channel_id) {
     console.log('===================================')
 }
 
-var channel_id = '309755'
+let channel_id = '309755'
 main(channel_id)
