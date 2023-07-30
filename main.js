@@ -10,7 +10,7 @@
 */
 const getChannelUrl = require('./GetChannelURL')
 const getChannelPageNum = require('./GetChannelPageNum')
-const {getAllChannelURLs, getAuthorID, loadAudio} = require('./Utils')
+const {getAuthorID} = require('./Utils')
 const getAllPrograms = require('./GetAllPrograms')
 const getAudioURL = require('./GetAudioURL')
 const getAudio=require('./GetAudio')
@@ -38,9 +38,4 @@ async function main(channel_id) {
 }
 
 var channel_id = '309755'
-// var author_v="4cd6c5c3c4827aac9412115330701e2c"
-// var page_num='1'
-// getAllPrograms(author_v,channel_id,page_num).then(res=>{
-//     console.log(res)
-// })
 main(channel_id)

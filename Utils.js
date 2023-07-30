@@ -13,13 +13,13 @@ function includeSomeCharacter(url, some_character) {
     return url.includes(some_character)
 }
 
-async function loadAudio(url, file_name, type = '.m4a', dist = './') {
-    fs.writeFileSync(dist + file_name + type, await download(url))
-}
+// async function loadAudio(url, file_name, type = '.m4a', dist = './') {
+//     fs.writeFileSync(dist + file_name + type, await download(url))
+// }
 
 module.exports = {
     // getAllChannelURLs,
     getAuthorID,
     includeSomeCharacter,
-    loadAudio
+    // loadAudio
 }
