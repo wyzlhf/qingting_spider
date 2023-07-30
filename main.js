@@ -1,6 +1,6 @@
 /*
 整理一下整个思路：
-1、更定Channel_id拼出Channel的URL——对应getChannelURL
+1、给定Channel_id拼出Channel的URL——对应getChannelURL
 2、通过Channel_url获取该Channel下一共有多少页面，即page_num——对应getChannelPageNum
 3、获取所有programs。这个不是使用HTML解析，而是根据Ajax的特定请求链接。即通过循环所有页数的请求，获取所有program_id，
    并主城json或字典即Object——对应getAllPrograms
